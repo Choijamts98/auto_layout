@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "hello-unicage.helloWorld",
-        "title": "Hello World"
+        "command": "hello-unicage-layout",
+        "title": "Hello Unicage"
       }
     ]
   },

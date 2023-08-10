@@ -9,13 +9,22 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand: helloUnicage",
+    "onLanguage: shellscript"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "hello-unicage-layout",
+        "command": "helloUnicage",
         "title": "Hello Unicage"
+      }
+    ],
+    "keybindings":[
+      {
+        "command": "helloUnicage",
+        "key": "ctrl+alt+i"
       }
     ]
   },

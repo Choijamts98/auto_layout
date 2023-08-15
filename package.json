@@ -1,7 +1,8 @@
 {
-  "name": "hello-unicage",
-  "displayName": "Hello Unicage",
-  "description": "Hello Unicage",
+  "name": "increment-fields",
+  "displayName": "Auto Increment",
+  "description": "Preparing for the personal project",
+  "icon": "icon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.81.0"
@@ -10,21 +11,36 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand: helloUnicage",
-    "onLanguage: shellscript"
+    "onCommand: startIncrement"
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "title": "Configuration of Auto Increment",
+      "properties": {
+        "increment-fields.padding": {
+          "type": "integer",
+          "default": 6,
+          "description": "Fields number in One line."
+        },
+        "increment-fields.seperator": {
+          "type": "integer",
+          "default": 4,
+          "description": "Space number between 2 fields."
+        }
+      }
+    },
     "commands": [
       {
-        "command": "helloUnicage",
-        "title": "Hello Unicage"
+        "command": "startIncrement",
+        "title": "Auto Increment"
       }
     ],
     "keybindings":[
       {
-        "command": "helloUnicage",
-        "key": "ctrl+alt+i"
+        "command": "startIncrement",
+        "key": "ctrl+alt+i",
+        "mac": "cmd+alt+i"
       }
     ]
   },

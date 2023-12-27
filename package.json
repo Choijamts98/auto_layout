@@ -20,12 +20,12 @@
       "properties": {
         "increment-fields.padding": {
           "type": "integer",
-          "default": 6,
+          "default": 8,
           "description": "Fields number in One line."
         },
         "increment-fields.seperator": {
           "type": "integer",
-          "default": 4,
+          "default": 5,
           "description": "Space number between 2 fields."
         }
       }
@@ -36,7 +36,7 @@
         "title": "Auto Increment"
       }
     ],
-    "keybindings":[
+    "keybindings": [
       {
         "command": "startIncrement",
         "key": "ctrl+alt+i",
